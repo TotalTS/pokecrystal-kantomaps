@@ -3,6 +3,7 @@
 	const ROUTE14_YOUNGSTER
 	const ROUTE14_POKEFAN_M2
 	const ROUTE14_KIM
+	const ROUTE13_POKEFAN_M3
 
 Route14_MapScripts:
 	def_scene_scripts
@@ -49,6 +50,20 @@ TrainerPokefanmTrevor:
 	waitbutton
 	closetext
 	end
+
+TrainerHikerKenny:
+	trainer HIKER, KENNY, EVENT_BEAT_HIKER_KENNY, HikerKennySeenText, HikerKennyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HikerKennyAfterBattleText
+	waitbutton
+	closetext
+	end
+
+Route13DirectionsSign:
+	jumptext Route13DirectionsSignText
 
 PokefanmCarterSeenText:
 	text "Let me tell you,"
@@ -113,6 +128,34 @@ PokefanmTrevorAfterBattleText:
 	line "got my #MON…"
 	done
 
+HikerKennySeenText:
+	text "I should go to"
+	line "ROCK TUNNEL to get"
+	cont "myself an ONIX."
+	done
+
+HikerKennyBeatenText:
+	text "I lost…"
+	done
+
+HikerKennyAfterBattleText:
+	text "Geological fea-"
+	line "tures don't appear"
+	cont "to change."
+
+	para "But they actually"
+	line "change, little by"
+	cont "little."
+	done
+
+Route13DirectionsSignText:
+	text "NORTH TO LAVENDER"
+	line "TOWN"
+
+	para "WEST TO FUCHSIA"
+	line "CITY"
+	done
+
 Route14_MapEvents:
 	db 0, 0 ; filler
 
@@ -121,9 +164,11 @@ Route14_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 17, 13, BGEVENT_READ, Route13DirectionsSign
 
 	def_object_events
-	object_event 11, 15, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmCarter, -1
-	object_event 11, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperRoy, -1
-	object_event  6, 11, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmTrevor, -1
-	object_event  7,  5, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 4, Kim, -1
+	object_event 11, 33, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmCarter, -1
+	object_event 11, 45, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperRoy, -1
+	object_event  6, 29, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmTrevor, -1
+	object_event  7, 23, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 4, Kim, -1
+	object_event 14, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerHikerKenny, -1

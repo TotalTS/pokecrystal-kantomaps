@@ -24,17 +24,11 @@ CeladonCity_Blocks:
 SaffronCity_Blocks:
 	INCBIN "maps/SaffronCity.blk"
 
-Route2_Blocks:
-	INCBIN "maps/Route2.blk"
-
 ElmsHouse_Blocks:
 	INCBIN "maps/ElmsHouse.blk"
 
 BetaSproutTower1_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower1.blk"
-
-Route11_Blocks:
-	INCBIN "maps/Route11.blk"
 
 BetaSproutTower5_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower5.blk"
@@ -44,9 +38,6 @@ Route15_Blocks:
 
 BetaSproutTower9_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower9.blk"
-
-Route19_Blocks:
-	INCBIN "maps/Route19.blk"
 
 BetaBlackthornCity_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaBlackthornCity.blk"
@@ -91,9 +82,6 @@ PalletTown_Blocks:
 Route25_Blocks:
 	INCBIN "maps/Route25.blk"
 
-Route24_Blocks:
-	INCBIN "maps/Route24.blk"
-
 BetaVioletCity_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaVioletCity.blk"
 
@@ -108,9 +96,6 @@ BetaSilverCaveOutside_Blocks: ; unreferenced
 
 BetaSproutTower2_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower2.blk"
-
-Route12_Blocks:
-	INCBIN "maps/Route12.blk"
 
 BetaGoldenrodCity_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaGoldenrodCity.blk"
@@ -238,9 +223,6 @@ ViridianCity_Blocks:
 Route13_Blocks:
 	INCBIN "maps/Route13.blk"
 
-Route21_Blocks:
-	INCBIN "maps/Route21.blk"
-
 BetaSproutTower7_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower7.blk"
 
@@ -301,9 +283,6 @@ CeruleanCity_Blocks:
 Route1_Blocks:
 	INCBIN "maps/Route1.blk"
 
-Route5_Blocks:
-	INCBIN "maps/Route5.blk"
-
 Route9_Blocks:
 	INCBIN "maps/Route9.blk"
 
@@ -333,9 +312,6 @@ ViridianMart_Blocks:
 SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
-
-Route10North_Blocks:
-	INCBIN "maps/Route10North.blk"
 
 BetaLakeOfRage_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaLakeOfRage.blk"
@@ -564,9 +540,6 @@ Route6_Blocks:
 
 Route7_Blocks:
 	INCBIN "maps/Route7.blk"
-
-Route16_Blocks:
-	INCBIN "maps/Route16.blk"
 
 Route18_Blocks:
 	INCBIN "maps/Route18.blk"
@@ -1045,5 +1018,32 @@ BetaBlank_Blocks: ; unreferenced
 
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
+
+Route2_Blocks:
+	INCBIN "maps/Route2.blk"
+
+Route5_Blocks:
+	INCBIN "maps/Route5.blk"
+
+Route10North_Blocks:
+	INCBIN "maps/Route10North.blk"
+
+Route11_Blocks:
+	INCBIN "maps/Route11.blk"
+
+Route12_Blocks:
+	INCBIN "maps/Route12.blk"
+
+Route16_Blocks:
+	INCBIN "maps/Route16.blk"
+
+Route19_Blocks:
+	INCBIN "maps/Route19.blk"
+
+Route24_Blocks:
+	INCBIN "maps/Route24.blk"
+
+Route21_Blocks:
+	INCBIN "maps/Route21.blk"
 
 ENDSECTION

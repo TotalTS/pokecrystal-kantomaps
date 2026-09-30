@@ -6,6 +6,9 @@ Route24_MapScripts:
 
 	def_callbacks
 
+Route25HiddenPotion:
+	hiddenitem POTION, EVENT_ROUTE_25_HIDDEN_POTION
+
 Route24RocketScript:
 	faceplayer
 	playmusic MUSIC_ROCKET_ENCOUNTER
@@ -124,6 +127,7 @@ Route24_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event  6,  5, BGEVENT_ITEM, Route25HiddenPotion
 
 	def_object_events
-	object_event  8,  7, SPRITE_ROCKET, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route24RocketScript, EVENT_ROUTE_24_ROCKET
+	object_event 10, 25, SPRITE_ROCKET, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route24RocketScript, EVENT_ROUTE_24_ROCKET

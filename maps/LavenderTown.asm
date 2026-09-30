@@ -108,7 +108,7 @@ LavenderTown_MapEvents:
 
 	def_warp_events
 	warp_event  5,  5, LAVENDER_POKECENTER_1F, 1
-	warp_event  5,  9, MR_FUJIS_HOUSE, 1
+	warp_event  7,  9, MR_FUJIS_HOUSE, 1
 	warp_event  3, 13, LAVENDER_SPEECH_HOUSE, 1
 	warp_event  7, 13, LAVENDER_NAME_RATER, 1
 	warp_event  1,  5, LAVENDER_MART, 2
@@ -118,9 +118,9 @@ LavenderTown_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event 11,  3, BGEVENT_READ, LavenderTownSign
+	bg_event  9,  3, BGEVENT_READ, LavenderTownSign
 	bg_event 15,  7, BGEVENT_READ, KantoRadioStationSign
-	bg_event  3,  9, BGEVENT_READ, VolunteerPokemonHouseSign
+	bg_event  5,  9, BGEVENT_READ, VolunteerPokemonHouseSign
 	bg_event 15, 13, BGEVENT_READ, SoulHouseSign
 	bg_event  6,  5, BGEVENT_READ, LavenderPokecenterSignText
 	bg_event  2,  5, BGEVENT_READ, LavenderMartSignText
