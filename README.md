@@ -11,6 +11,7 @@ The project preserves engine compatibility, carefully adjusting dimensions and o
 
 Most of Cinnabar Island has been restored.
 Boulders have been placed in front of the Cinnabar Gym entrance to preserve the original story progression, but they can easily be removed if you want the gym to be fully accessible.
+Also boulders prevent to exit the map as intended in its current state.
 
 ![Route25](screenshots/Route25.png)
 
